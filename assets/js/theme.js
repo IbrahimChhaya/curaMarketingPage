@@ -2,7 +2,13 @@
 $('document').ready(function() {
   $('#doctorSlideshow').owlCarousel({
     nav: true,
-    dots: false,
+    dots: true,
+    dotsEach: true,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout:7000,
+    autoplayHoverPause:true,
+    smartSpeed:1000,
     //navText: ["<span class='mai-arrow-back'></span>", "<span class='mai-arrow-forward'></span>"],
     responsive: {
       0: {
@@ -24,7 +30,7 @@ $('document').ready(function() {
 $('document').ready(function() {
     $('#aboutSlide').owlCarousel({
       nav: true,
-      dots: false,
+      dots: true,
       loop:true,
       autoplay: true,
       autoplayTimeout:7000,
