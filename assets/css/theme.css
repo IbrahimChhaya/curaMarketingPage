@@ -1852,7 +1852,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media only screen and (max-width: 600px) {
     .owl-carousel .owl-item .ss-responsive {
-        width: 40%;
+        width: 50%;
     }
 
     .paddedAbout {
@@ -1865,3 +1865,8 @@ a.text-dark:hover, a.text-dark:focus {
     }
 }
 
+@media only screen and (max-width: 400px) {
+    .page-hero {
+        height: 230px;
+    }
+}
