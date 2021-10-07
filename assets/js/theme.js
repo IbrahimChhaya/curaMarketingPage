@@ -2,14 +2,10 @@
 $('document').ready(function() {
   $('#doctorSlideshow').owlCarousel({
     nav: true,
-    dots: true,
-    dotsEach: true,
+    dots: false,
     loop: true,
-    autoplay: true,
-    autoplayTimeout:7000,
-    autoplayHoverPause:true,
-    smartSpeed:1000,
-    //navText: ["<span class='mai-arrow-back'></span>", "<span class='mai-arrow-forward'></span>"],
+    smartSpeed:500,
+    navText: ["<span class='mai-arrow-back'></span>", "<span class='mai-arrow-forward'></span>"],
     responsive: {
       0: {
         items: 1
@@ -30,13 +26,13 @@ $('document').ready(function() {
 $('document').ready(function() {
     $('#aboutSlide').owlCarousel({
       nav: true,
-      dots: true,
+      dots: false,
       loop:true,
-      autoplay: true,
+      autoplay: false,
       autoplayTimeout:7000,
       autoplayHoverPause:true,
-      smartSpeed:1000,
-      //navText: ["<span class='mai-arrow-back'></span>", "<span class='mai-arrow-forward'></span>"],
+      smartSpeed:500,
+      navText: ["<span class='mai-arrow-back'></span>", "<span class='mai-arrow-forward'></span>"],
       responsive: {
         0: {
           items: 1
@@ -47,17 +43,35 @@ $('document').ready(function() {
 
   $('document').ready(function() {
     $('#featuresSlide').owlCarousel({
-      nav: true,
-      dots: false,
-      loop:true,
-      autoplay: true,
-      autoplayTimeout:7000,
-      autoplayHoverPause:true,
-      smartSpeed:1000,
-      //navText: ["<span class='mai-arrow-back'></span>", "<span class='mai-arrow-forward'></span>"],
+
+        nav: true,
+        dots: false,
+        navText: ["<span class='mai-arrow-back'></span>", "<span class='mai-arrow-forward'></span>"],
+        loop: true,
+        smartSpeed:500,
+        autoplay: true,
+        autoplayTimeout:7000,
+        autoplayHoverPause:true,
+        margin: 20,
+
+      items: 1,
+      responsiveClass:true,
+      autoHeight: true,
       responsive: {
         0: {
-          items: 1
+            items: 1
+        },
+        576: {
+            items: 2
+        },
+        992: {
+            items: 3
+        },
+        1300: {
+            items: 4
+        },
+        1500: {
+            items: 5
         }
       }
     });
@@ -71,12 +85,23 @@ $('document').ready(function() {
       autoplay: true,
       autoplayTimeout:7000,
       autoplayHoverPause:true,
-      smartSpeed:1000,
-      //navText: ["<span class='mai-arrow-back'></span>", "<span class='mai-arrow-forward'></span>"],
+      smartSpeed:500,
+      navText: ["<span class='mai-arrow-back'></span>", "<span class='mai-arrow-forward'></span>"],
+      margin: 20,
+
+      items: 1,
+      responsiveClass:true,
+      autoHeight: true,
       responsive: {
         0: {
-          items: 1
-        }
+            items: 1
+        },
+        576: {
+            items: 2
+        },
+        992: {
+            items: 3
+        },
       }
     });
   });

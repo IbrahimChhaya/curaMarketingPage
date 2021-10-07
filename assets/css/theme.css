@@ -1840,20 +1840,28 @@ a.text-dark:hover, a.text-dark:focus {
 
 /* our CSS */
 
-.owl-nav
+/* .owl-nav
 {
     display: none;
-}
+} */
 
 .GPlogo
 {
     width: 29px;
 }
 
-/* @media only screen and (max-width: 1400px) {
-    .GPlogo
-    {
-        line-height: 1;
-        padding: 0.625rem 0.5em;
+@media only screen and (max-width: 600px) {
+    .owl-carousel .owl-item .ss-responsive {
+        width: 40%;
     }
-} */
+
+    .paddedAbout {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .page-hero {
+        height: 305px;
+    }
+}
+
